@@ -35,7 +35,8 @@ export default function USEKApp() {
     { id: 'rooms', name: 'Study Rooms', icon: Calendar }
   ];
 
-  const handleCarpoolSubmit = (e) => {
+  const handleCarpoolSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
     e.preventDefault();
     const match = {
       name: carpoolData.type === 'driver' ? 'Maria K.' : 'Alex R.',
