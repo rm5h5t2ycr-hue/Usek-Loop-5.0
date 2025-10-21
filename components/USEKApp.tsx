@@ -25,7 +25,8 @@ export default function USEKApp() {
     people: '',
     studentId: ''
   });
-  const [matches, setMatches] = useState([]);
+  const [matches, setMatches] = useState<{ name: string; type: string; location: string; time: string; people: number }[]>([]);
+
   const [showMatch, setShowMatch] = useState(false);
 
   const tabs = [
